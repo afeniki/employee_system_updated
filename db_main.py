@@ -45,7 +45,36 @@ jobEntryTabOne.grid(row=2, column=1, padx=15, pady=15)
 
 imgLabelTabOne.grid(row=0, column=2, rowspan=3, padx=15, pady=15)
 
-#ADDING WIDGETS FOR TAB
+#ADDING WIDGETS FOR TAB2
+firstLabelTabTwo = tk.Label(tab2, text="FirstName:")
+familyLabelTabTwo = tk.Label(tab2, text="FamilyName:")
+jobLabelTabTwo = tk.Label(tab2, text="Job Title:")
+
+firstEntryTabTwo = tk.Entry(tab2)
+familyEntryTabTwo = tk.Entry(tab2)
+jobEntryTabTwo = tk.Entry(tab2)
+
+imgLabelTabTwo = tk.Label(tab2)
+
+buttonCommit = tk.Button(tab2, text="Add Record To Database")
+buttonAddImage = tk.Button(tab2, text="Add Image")
+
+#ADD WIDGETS ON TAB TWO
+firstLabelTabTwo.grid(row=0, column=0, padx=15, pady=15)
+firstEntryTabTwo.grid(row=0, column=1, padx=15, pady=15)
+
+familyLabelTabTwo.grid(row=1, column=0, padx=15, pady=15)
+familyEntryTabTwo.grid(row=1, column=1, padx=15, pady=15)
+
+jobLabelTabTwo.grid(row=2, column=0, padx=15, pady=15)
+jobEntryTabTwo.grid(row=2, column=1, padx=15, pady=15)
+
+imgLabelTabTwo.grid(row=0, column=2, rowspan=3, padx=15, pady=15)
+
+buttonCommit.grid(row=4, column=1, padx=15, pady=15)
+buttonAddImage.grid(row=4, column=2, padx=15, pady=15)
+
+
 tab_parent.pack(expand=1, fill="both")
 
 form.mainloop()
